@@ -1,7 +1,7 @@
 ---
 layout: home
-title: /home
+title: /
 permalink: /
 ---
 
-:(){ :|: & }
+$ ls -lha
