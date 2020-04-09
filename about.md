@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
+title: /about
 permalink: /about
 ---
 
-Thanks Arturo GIL!
+@TRMIKO made this possible... xd
