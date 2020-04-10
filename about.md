@@ -6,7 +6,7 @@ permalink: /about
 
 Linux enthusiast, half degree in actuarial science another half in computer science.
 
-I'm intereste in computer security, privacy, anonimity, FOSS, swimming and cycling.
+I'm intereste in computer security, privacy, anonymity, FOSS, swimming and cycling.
 
 BTW I use Arch. <3
 
