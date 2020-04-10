@@ -10,4 +10,4 @@ I'm intereste in computer security, privacy, anonymity, FOSS, swimming and cycli
 
 BTW I use Arch. <3
 
-Kudos to @TRMIKO, who made this possible... I suck at web development.
+Kudos to @TRMIKO, who made this possible (I suck at web development).
