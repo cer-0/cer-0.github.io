@@ -21,19 +21,23 @@
 title: /dev/null
 email: cer0@riseup.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Yet another blog, here you can find linux, security, anonymity, privacy and FOSS related posts.
+  My corner of the internet.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cer-0.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cer-0.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _cer0
 github_username:  cer-0
 
 # Build settings
-remote_theme: b2a3e8/jekyll-theme-console
+remote_theme: cer-0/jekyll-theme-console
 header_pages:
     - index.md
     - about.md
+    - contact.md
 plugins:
   - jekyll-feed
+
+# footer: '<a href="https://cer-0.github.io/feed.xml">rss</a>'
+footer: '<a href="/feed.xml">rss</a> <a href="https://bandcamp.com/egf/wishlist">donate</a>'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
