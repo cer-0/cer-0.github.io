@@ -1,5 +1,5 @@
 ---
-title: 0x0 Hello World!
+title: Hello World!
 layout: page
 ---
 
