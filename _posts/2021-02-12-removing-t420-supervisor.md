@@ -5,7 +5,7 @@ layout: page
 
 Almost a year, whoa, time flies, good thing I said: "_Hopefully I will be posting regularly_".
 
-So, yesterday I spend almost three hours (dis)assembling and trying  to remove the supervisor password from my dad's T420. For some reason, the battery died a few months back, so I ordered a new one, but the thing is, I **do not** remember setting up a supervisor password for this laptop, neither does my dad. The question is: did the dead battery had anything to do with this, or was I too ~~distracted~~ stupid to realize about the supervisor password when I bought the machine?.
+So, yesterday I spend almost three hours (dis)assembling and trying to remove the supervisor password from my dad's T420. For some reason, the battery died a few months back, so I ordered a new one, but the thing is, I **do not** remember setting up a supervisor password for this laptop, neither does my dad. The question is: did the dead battery had anything to do with this, or was I too ~~distracted~~ stupid to realize about the supervisor password when I bought the machine?.
 
 In either case, here is my experience trying to remove the password (spoiler: it was frustrating, but I did it). This is not a technical description of the process, I barely know about electronics, so proceed with caution.
 
@@ -16,7 +16,7 @@ To be honest, this was the simplest part. Yo will need:
 * screwdrivers
 * tweezers
 
-Below you can find pictures where the tweezers I used appear.
+In one of the pictures below I show the tweezers I used.
 
 ## Disassembling the T420
 
@@ -67,7 +67,7 @@ With the MB unplugged to the power connection (remember, we are getting used to 
 
 ## Removing the supervisor password
 
-This is the trickiest part, I found two youtube videos, and both of them had part of the answer, so, here is the steps I used to remove the password:
+This is the trickiest part, I found two youtube videos, and both of them had part of the answer, so, here are the steps I used to remove the password:
 
 1. Plug the power supply to the MB
 2. **As soon as the ThinkPad logo appears**, **hold the pins**, **TRY not stop holding them**[^1].
@@ -90,7 +90,7 @@ If you can access all the settings, *congratulations*!, you defeated the supervi
 
 This was not my first time attempting to remove a supervisor password, a couple of years ago, me and a friend tried on a [ThinkPad Z61t](https://www.thinkwiki.org/wiki/Category:Z61t), but with no success at all (we tried bridging the EEPROM). I must say, even when the process is shorter compared to flashing coreboot it is more exasperating (at least for me).
 
-Each one has pros and cons, you get the default experience with the default BIOS, but you loose the freedom and speed of coreboot, of course, removing a supervisor only requires a couple of simple tools, while flashing coreboot demands more experience, and additional hardware. ¯\_(ツ)\_/¯
+Each one has pros and cons, you get the default experience with the default BIOS, but you loose the freedom and speed of coreboot, of course, removing a supervisor only requires a couple of simple tools, while flashing coreboot demands more experience, and additional hardware. ¯\\_(ツ)\_/¯
 
 I will have stayed with coreboot, but this was my dad's computer. Still, was good to learn this process. Anyway, [contact me](https://cer-0.github.io/contact) if you have any questions or recommendations. (;
 
@@ -106,3 +106,5 @@ This time I am going to post *at least* once a month, *A* have challenged me to 
 Also, I almost forgot... I'm about to start classes, I'm kinda nervous... it is weird *starting over again*, but I guess is a good thing.
 
 Be safe, whenever and wherever you are.
+
+---
