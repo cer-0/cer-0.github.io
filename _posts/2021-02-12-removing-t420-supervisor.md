@@ -26,11 +26,11 @@ I have disassembled this ThinkPad a couple of times, so, this was pretty straigh
 
 In the bottom part of the motherboard (MB), next to the DVD bay connection, we will find a little chip, and next to it our targets, the pins **R30** and **R45**. Here are a couple of pictures to help you spotting those things:
 
-![Overview of the MB](../assets/raspft420-1.jpg)
+![Overview of the MB](/assets/raspft420-1.jpg)
 
 A closer look:
 
-![These are barely visible](../assets/raspft420-2.jpg)
+![These are barely visible](/assets/raspft420-2.jpg)
 
 ## Plugging the necessary stuff
 
@@ -49,13 +49,13 @@ These other are optional, since I was on my own they came handy:
 
 I attached the MB to the magnesium structure and used the 3mm screw for holding it, so when I was using the tweezers it did not move. Next, I inserted the display and added the two 6mm screws to hold it in place. It ended up looking like this:
 
-![All the parts glued on to the MB](../assets/raspft420-3.jpg)
+![All the parts glued on to the MB](/assets/raspft420-3.jpg)
 
 ## Positioning the computer?
 
 You computer has to be in a position where you can hold both pins with one hand, touch the keyboard (with the other hand), see the display and be able to have the computer powered with the charger. Someone's help will be handy here. *My positioning looked something like this*:
 
-![The power plug was not damaged](../assets/raspft420-4.jpg)
+![The power plug was not damaged](/assets/raspft420-4.jpg)
 
 ## Getting used to bridging the pins?
 
@@ -63,7 +63,7 @@ Before we proceed I will recommend you to get used to holding down the pins, sin
 
 With the MB unplugged to the power connection (remember, we are getting used to it) hold on the pins firmly, **if you do it with too much force the tweezers will slide off**.
 
-![Holding the pins lol](../assets/raspft420-5.jpg)
+![Holding the pins lol](/assets/raspft420-5.jpg)
 
 ## Removing the supervisor password
 
