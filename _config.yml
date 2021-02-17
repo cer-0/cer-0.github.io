@@ -36,7 +36,7 @@ plugins:
   - jekyll-feed
 
 # footer: '<a href="https://cer-0.github.io/feed.xml">rss</a>'
-footer: '<a href="/feed.xml">rss</a> <a href="https://bandcamp.com/egf/wishlist">donate</a>'
+footer: '<a href="/feed.xml">feed</a> <a href="https://bandcamp.com/egf/wishlist">support me</a>'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
