@@ -35,8 +35,12 @@ header_pages:
 plugins:
   - jekyll-feed
 
-# footer: '<a href="https://cer-0.github.io/feed.xml">rss</a>'
 footer: '<a href="/feed.xml">feed</a> <a href="https://bandcamp.com/egf/wishlist">support me</a>'
+
+# Markdown options
+kramdown:
+  input: GFM
+  hard_wrap: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
