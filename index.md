@@ -4,4 +4,4 @@ title: /home
 permalink: /
 ---
 
-$ ls -lha
+$ ls -lth
