@@ -53,7 +53,7 @@ _Y en la otra esquina, damas y damos_...
 
 Usando Scheme escribí esta solución (sí, la primera vez que intenté resolver este ejercicio, hace casi un año, tuve un error), cuatro veces más lineas que en Ruby, sin embargo, no hubo una búsqueda en StackOverflow, pues, el desarrollo de cada una de las funciones fue algo _"intuitivo"_ (a lo sumo erré en preceder el paréntesis izquierdo en los argumentos en lugar del nombre de la función) y _"natural"_.
 
-A lo que me refiero es que desde **mi** punto de vista, la solución en Scheme muestra una gran sencillez, incluso para aquellas personas que no están relacionadas con la programación. Pero, la razón principal por la que considero que el proceso de solución es más comprensivo se debe a que el `procediemiento` se crea desde cero, esto incluye desarrollar cada una de las funciones de apoyo, a diferencia de Ruby donde se sigue un desarrollo meramente estructurado, empleando métodos que apenas podía hacer funcionar.
+A lo que me refiero es que desde **mi** punto de vista, la solución en Scheme muestra una gran sencillez, incluso para aquellas personas que no están relacionadas con la programación. Pero, la razón principal por la que considero que el proceso de solución es más comprensivo se debe a que el `procedimiento` se crea desde cero, esto incluye desarrollar cada una de las funciones de apoyo, a diferencia de Ruby donde se sigue un desarrollo meramente estructurado, empleando métodos que apenas podía hacer funcionar.
 
 ## Experiencias
 
