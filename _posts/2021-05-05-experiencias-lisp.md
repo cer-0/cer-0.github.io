@@ -4,13 +4,13 @@ layout: page
 lang: es
 ---
 
-Recientemente (¡rayos!, se supone que terminaría esta entrada hace cuatro días) se celebró el Festival Latinoamericano de Instalación de Software Libre[^0] (FLISoL) con sede en el Rancho Electrónico[^1] de la CeDeMequis donde tuve la idea de participar junto con [Diego](https://github.com/umoqnier) compartiendo la [charla](https://youtu.be/RtjIwGFmBJ4?t=3605) (y un pequeño taller) _Experiencias aprendiendo a programar en LISP (o cómo comenzar a preocuparte por balancear tus paréntesis)_ (la cual se preparó unas horas antes de su presentación), lo que sigue es un intento por plasmar parte de lo que vagamente se dijo en esa charla, específicamente la parte de las experiencias. 
+Recientemente (¡rayos!, se supone que terminaría esta entrada hace cuatro días) se celebró el Festival Latinoamericano de Instalación de Software Libre[^0] (FLISoL) con sede en el Rancho Electrónico[^1] de la CeDeMequis donde tuve la idea de participar junto con [Diego](https://github.com/umoqnier), compartiendo la [charla](https://youtu.be/RtjIwGFmBJ4?t=3605) (y un pequeño taller) _Experiencias aprendiendo a programar en LISP (o cómo comenzar a preocuparte por balancear tus paréntesis)_ (la cual se preparó unas horas antes de su presentación), lo que sigue es un intento por plasmar parte de lo que vagamente se dijo en esa charla, específicamente la parte de las experiencias. 
 
 ## ¿Qué rayos es LISP?
 
-**LIS**t **P**rocessor es un sistema de programación desarrollado por John McCarthy. Si bien en un inicio no era necesariamente un lenguaje de programación, conforme ganó exposición las personas comenzaron a crear lenguajes de programación basados en el documento presentado por McCarthy en 1960 _Recursive Functions of Symbolic Expressionsand Their Computation by Machine_ [^2] (estas fueron las primeras _familias_ o _dialectos_ de LISP). Hoy en día las familias de LISP más populares son Common Lisp, Scheme, Racket, Guile, Emacs Lisp, Julia, entre muchas otras.
+**LIS**t **P**rocessor es un sistema de programación desarrollado por John McCarthy. Si bien en un inicio no era necesariamente un lenguaje de programación, conforme ganó exposición las personas comenzaron a crear lenguajes de programación basados en el documento presentado por McCarthy en 1960, _Recursive Functions of Symbolic Expressionsand Their Computation by Machine_ [^2] (estas fueron las primeras _familias_ o _dialectos_ de LISP). Hoy en día los dialectos más populares son Common Lisp, Scheme, Racket, Guile, Emacs Lisp, Clojure, entre muchas otras.
 
-Creo que no tengo mucho que compartir en este aspecto, pero definitivamente revisaría la [wiki de LISP](https://en.wikipedia.org/wiki/Lisp_(programming_language)) para leer un poco del aspecto histórico.
+Creo que no tengo mucho que compartir en este aspecto (debí de pedirle ayuda a Juan para esta parte), pero definitivamente revisaría la [Wiki de LISP](https://en.wikipedia.org/wiki/Lisp_(programming_language)) para leer un poco acerca de la historia que hay detrás de.
 
 ## ¿Por qué aprender LISP?
 
@@ -67,11 +67,11 @@ El seminario de LISP vio sus inicios intentando leer Structure and Interpretatio
 
 ### Notación prefija
 
-Incluso después de casi un año el uso de notación prefija sigue siendo un confusa en ocasiones, principalmente con los operadores aritméticos y de relación (o mejor dicho, en todas las operaciones _no conmutativas_). En LISP (generalmente) el orden de los argumentos sí importa, pues no es lo mismo evaluar `(> 1 2)` a `(> 2 1)`, ya que equivalen a `1 > 2` y `2 > 1` respectivamente, de aquí que no les sorprenda ver errores de este tipo en el código que puedo llegar a escribir. Claro que existen excepciones como las funciones `+` o `*`.
+Incluso después de casi un año el uso de notación prefija sigue siendo confusa en ocasiones, principalmente con los operadores aritméticos y de relación (o mejor dicho, en todas las operaciones _no conmutativas_). En LISP (generalmente) el orden de los argumentos sí importa, pues no es lo mismo evaluar `(> 1 2)` a `(> 2 1)`, ya que equivalen a `1 > 2` y `2 > 1` respectivamente, de aquí que no les sorprenda ver errores de este tipo en el código que puedo llegar a escribir. Claro que existen excepciones como las funciones `+` o `*`.
 
 ### Recursión
 
-La recursión es uno de los aspectos fundamentales y característicos de LISP, sin embargo, sigue sorprendiéndome cada ocasión en la que logramos resolver algún ejercicio siguiendo esta metodología.
+La recursión es uno de los aspectos fundamentales y característicos de LISP, sin embargo, sigue sorprendiéndome cada ocasión que logramos resolver algún ejercicio siguiendo esta metodología.
 
 Para quienes van empezando, recursión en términos muy informales, es realizar una y otra vez un procedimiento dentro del mismo procedimiento. 🤯. Confuso, lo sé. Mejor tomemos esta función como ejemplo:
 
@@ -87,7 +87,7 @@ Para quienes van empezando, recursión en términos muy informales, es realizar 
 
 La primera línea define la función `cuenta-rebanadas` y los argumentos que recibe, en este caso una único argumento en forma de lista (`lista-de-rebanadas`).
 
-Le sigue una macro `cond` que es  algo similar a las estructuras `if ... else` en otros lenguajes, la tercera línea contiene el predicado `(null lista-de-rebanadas)` que pregunta si `lista-de-rebanadas` es vacía (`()` o `NIL`), si es cierto se devuelve el número `0` porque recibimos una lista sin elementos.
+Le sigue una macro `cond` que es algo similar a las estructuras `if ... else` en otros lenguajes, la tercera línea contiene el predicado `(null lista-de-rebanadas)` que pregunta si `lista-de-rebanadas` es vacía (`()` o `NIL`), si es cierto se devuelve el número `0` porque recibimos una lista sin elementos.
 
 Finalmente, en las últimas dos líneas es donde encontramos la _"llamada recursiva"_. En caso de que `lista-de-rebanadas` no sea vacía, asumimos que debe de contener al menos una rebanada, así que con el símbolo `t` (verdadero) representamos el equivalente a la cláusula `else`, donde se realiza una suma `(+ 1 NUM-DESCONOCIDO)` donde `NUM-DESCONOCIDO` es el resultado que nos devolverá la llamada recursiva a la misma función `cuenta-rebanadas` con el argumento `(cdr lista-de-rebanadas)`, es decir `lista-de-rebanadas` menos el primer elemento, de tal forma que `(cdr '(r r))` retorna la lista `(r)`... (¡Que locura!, ¿cierto?, quizá me emociono demasiado, pero me parece muy interesante resolver problemas así).
 
@@ -122,13 +122,13 @@ La misma idea se sigue para cualquier número de rebanadas entero positivo. Buen
 
 ## Conclusiones
 
-Parece mentira que un año pasó, incluso, me es difícil creer que la primera ocasión en la que intenté aprender LISP todo resultó ser esotérico e inaccesible, a pesar de esto el camino ha sido interesante, lento, pero muy fructífero. Definitivamente recomiendo al menos una vez en la vida se debería de aprender LISP, sólo por la mera curiosidad o placer mental al resolver problemas. (:
+Parece mentira que un año pasó, incluso, me es difícil creer que la primera ocasión en la que intenté aprender LISP todo resultó ser esotérico e inaccesible, a pesar de esto el camino ha sido interesante, lento, pero muy fructífero. Definitivamente recomiendo (al menos una vez en la vida) aprender LISP, sólo por la mera curiosidad o placer mental al resolver problemas. (:
 
 ### ¿Por dónde empiezo a aprender LISP?
 
-Si estas leyendo esto, intenta unirte al seminario de lisp[^4], a la fecha de esta publicación la Facultad de Ingeniería de la UNAM ha detenido actividades debido a la situación de pagos para académicas y académicos (la UNAM no paga, mucho menos aún en la pandemia, es lo que entiendo de la situación), nos reunimos miércoles y sábado de 19:00 a 21:00 (UTC-5) en la sala de jitsi **seminariolisplidsol**, puedes encontrar más detalles en el repositorio o en la página de [LIDSoL](https://lidsol.org) (el laboratorio que organiza el seminario).
+Si (por alguna extraña y remota posibilidad) estas leyendo esto, intenta unirte al seminario de lisp[^4], a la fecha de esta publicación la Facultad de Ingeniería de la UNAM ha detenido actividades debido a la situación de pagos para académicas y académicos (la UNAM no paga, mucho menos en la pandemia, es lo que entiendo de la situación), nos reunimos miércoles y sábado de 19:00 a 21:00 (UTC-5) en la sala de jitsi **seminariolisplidsol**, puedes encontrar más detalles en el repositorio o en la página de [LIDSoL](https://lidsol.org) (el laboratorio que organiza el seminario).
 
-Ahora, basándonos en experiencias podemos recomendar (no necesariamente en orden):
+Ahora, basándonos en experiencias podemos recomendar (no necesariamente en este orden):
 
 * **A Gentle Introduction to Symbolic Computation**, excelente punto de partida.
 * **Practical Common Lisp** (en la lista de libros pendientes).
