@@ -8,13 +8,13 @@ Recientemente (¡rayos!, se supone que terminaría esta entrada hace cuatro día
 
 ## ¿Qué rayos es LISP?
 
-**LIS**t **P**rocessor es un sistema de programación desarrollado por John McCarthy. Si bien en un inicio no era necesariamente un lenguaje de programación, conforme ganó exposición las personas comenzaron a crear lenguajes de programación basados en el documento presentado por McCarthy en 1960, _Recursive Functions of Symbolic Expressionsand Their Computation by Machine_ [^2] (estas fueron las primeras _familias_ o _dialectos_ de LISP). Hoy en día los dialectos más populares son Common Lisp, Scheme, Racket, Guile, Emacs Lisp, Clojure, entre muchas otras.
+**LIS**t **P**rocessor es un sistema de programación desarrollado por John McCarthy. Si bien en un inicio no era necesariamente un lenguaje de programación, conforme ganó exposición las personas comenzaron a crear lenguajes de programación basados en el documento presentado por McCarthy en 1960, _Recursive Functions of Symbolic Expressions and Their Computation by Machine_ [^2] (estas fueron las primeras _familias_ o _dialectos_ de LISP). Hoy en día los dialectos más populares son Common Lisp, Scheme, Racket, Guile, Emacs Lisp, Clojure, entre muchos otros.
 
-Creo que no tengo mucho que compartir en este aspecto (debí de pedirle ayuda a Juan para esta parte), pero definitivamente revisaría la [Wiki de LISP](https://en.wikipedia.org/wiki/Lisp_(programming_language)) para leer un poco acerca de la historia que hay detrás de.
+Creo que no tengo mucho que compartir en este aspecto (debí de pedir ayuda a Juan para esta parte), pero definitivamente revisaría la [Wiki de LISP](https://en.wikipedia.org/wiki/Lisp_(programming_language)) para leer un poco acerca de la historia que hay detrás de.
 
 ## ¿Por qué aprender LISP?
 
-Hace (casi) 4 años que Gomezcaña lo mencionó, dijo que _si quería aprender a programar debería de revisar LISP_. Ahora sé que el lenguaje apenas influye en el proceso de "aprender a programar", sin embargo, LISP te hace pensar de manera diferente a lo habitual. Quizá usando el siguiente problema como ejemplo todo sea un poco más claro:
+Hace (casi) 4 años que Gomezcaña lo mencionó, dijo que _si quería aprender a programar debería de revisar LISP_. Ahora sé que el lenguaje apenas influye en el proceso de "aprender a programar", sin embargo, LISP te hace pensar de manera diferente a lo habitual, muy diferente. Quizá usando el siguiente problema como ejemplo todo sea un poco más claro:
 
 **Ejercicio 1.3**[^3]: Define un procedimiento que toma tres números como argumentos y devuelve la suma de los cuadrados de los dos números más grandes.
 
