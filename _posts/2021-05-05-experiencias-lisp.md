@@ -61,9 +61,9 @@ A lo que me refiero es que desde **mi** punto de vista, la solución en Scheme m
 
 ![If you ask me...](/assets/eaplm-1.jpg)
 
-El seminario de LISP vio sus inicios intentando leer Structure and Interpretation of Computer Programs (SICP), (un libro con un gran renombre en la comunidad, debido a que durante algún tiempo fue el texto predilecto para enseñar fundamentos de programación, modularidad, recursividad, entre otros temas), durante poco más de un mes leímos las primeras secciones de este, sin embargo, el libro despegó bastante rápido, dejando huecos en el aprendizaje, razón por la que decidimos posponer su lectura y comenzar inmediatamente con The Little Schemer.
+El seminario de LISP vio sus inicios intentando leer Structure and Interpretation of Computer Programs (SICP), (un libro con un gran renombre en la comunidad, debido a que durante algún tiempo fue el texto predilecto para enseñar fundamentos de programación, modularidad, recursividad, etc., en el MIT), durante poco más de un mes leímos las primeras secciones de este, sin embargo, el libro despegó bastante rápido, dejando huecos en el aprendizaje, razón por la que decidimos posponer su lectura y comenzar inmediatamente con The Little Schemer.
 
-No quiero decir que no hay que leer este libro, más bien, considerar su lectura para el futuro (si es que vamos comenzando en el mundo de LISP).
+> No quiero decir que no hay que leer este libro, más bien, considerar su lectura para el futuro (si es que vamos comenzando en el mundo de LISP).
 
 ### Notación prefija
 
@@ -111,6 +111,8 @@ Después de verificar que `(x)` no es una lista vacía se suma uno al resultado 
 => 1
 ```
 
+🤔...
+
 ```lisp
 (cuenta-rebanadas '(rebanada rebanada)
 ```
@@ -124,7 +126,9 @@ Parece mentira que un año pasó, incluso, me es difícil creer que la primera o
 
 ### ¿Por dónde empiezo a aprender LISP?
 
-Basándonos en experiencias podemos recomendar (no necesariamente en orden):
+Si estas leyendo esto, intenta unirte al seminario de lisp[^4], a la fecha de esta publicación la Facultad de Ingeniería de la UNAM ha detenido actividades debido a la situación de pagos para académicas y académicos (la UNAM no paga, mucho menos aún en la pandemia, es lo que entiendo de la situación), nos reunimos miércoles y sábado de 19:00 a 21:00 (UTC-5) en la sala de jitsi **seminariolisplidsol**, puedes encontrar más detalles en el repositorio o en la página de [LIDSoL](https://lidsol.org) (el laboratorio que organiza el seminario).
+
+Ahora, basándonos en experiencias podemos recomendar (no necesariamente en orden):
 
 * **A Gentle Introduction to Symbolic Computation**, excelente punto de partida.
 * **Practical Common Lisp** (en la lista de libros pendientes).
