@@ -4,7 +4,7 @@ layout: page
 lang: es
 ---
 
-Recientemente (¡rayos!, se supone que terminaría esta entrada hace cuatro días) se celebró el Festival Latinoamericano de Instalación de Software Libre[^0] (FLISoL) con sede en el Rancho Electrónico[^1] de la CeDeMequis donde tuve la idea de participar junto con [Diego](https://github.com/umoqnier) compartiendo la charla (y un pequeño taller) [Experiencias aprendiendo a programar en LISP (o cómo comenzar a preocuparte por balancear tus paréntesis)](https://youtu.be/RtjIwGFmBJ4?t=3605) (la cual se preparó unas horas antes de su presentación), lo que sigue es un intento por plasmar parte de lo que vagamente se dijo en esa charla, específicamente la parte de las experiencias. 
+Recientemente (¡rayos!, se supone que terminaría esta entrada hace cuatro días) se celebró el Festival Latinoamericano de Instalación de Software Libre[^0] (FLISoL) con sede en el Rancho Electrónico[^1] de la CeDeMequis donde tuve la idea de participar junto con [Diego](https://github.com/umoqnier) compartiendo la [charla](https://youtu.be/RtjIwGFmBJ4?t=3605) (y un pequeño taller) _Experiencias aprendiendo a programar en LISP (o cómo comenzar a preocuparte por balancear tus paréntesis)_ (la cual se preparó unas horas antes de su presentación), lo que sigue es un intento por plasmar parte de lo que vagamente se dijo en esa charla, específicamente la parte de las experiencias. 
 
 ## ¿Qué rayos es LISP?
 
@@ -18,11 +18,13 @@ Hace (casi) 4 años que Gomezcaña lo mencionó, dijo que _si quería aprender a
 
 **Ejercicio 1.3**[^3]: Define un procedimiento que toma tres números como argumentos y devuelve la suma de los cuadrados de los dos números más grandes.
 
+---
 ```ruby
 def procedimiento (x, y, z)
   return [x, y, z].max(2).map{|n| n*n}.reduce(:+)
 end
 ```
+---
 
 Intentando desempolvar lo poco que sé de Ruby llegué a este código (con ayuda de StackOverflow, claro, no recordaba cómo usar los operadores `map` y `reduce`, sobre todo esa cosa rara `:`, que si no me equivoco, representa a los _objetos iterativos_ por sí mismos). Desglosando un poco el código tenemos:
 
@@ -32,6 +34,7 @@ La línea con el operador `return` hace exactamente lo que pide el problema, es 
 
 _Y en la otra esquina, damas y damos_...
 
+---
 ```scheme
 (define (cuadrado x)
   (* x x))
@@ -46,6 +49,7 @@ _Y en la otra esquina, damas y damos_...
   (suma-de-cuadrados (devuelve-mayor x y) 
                      (devuelve-mayor y z)))
 ```
+---
 
 Usando Scheme escribí esta solución (sí, la primera vez que intenté resolver este ejercicio, hace casi un año, tuve un error), cuatro veces más lineas que en Ruby, sin embargo, no hubo una búsqueda en StackOverflow, pues, el desarrollo de cada una de las funciones fue algo _"intuitivo"_ (a lo sumo erré en preceder el paréntesis izquierdo en los argumentos en lugar del nombre de la función) y _"natural"_.
 
@@ -71,6 +75,7 @@ La recursión es uno de los aspectos fundamentales y característicos de LISP, s
 
 Para quienes van empezando, recursión en términos muy informales, es realizar una y otra vez un procedimiento dentro del mismo procedimiento. 🤯. Confuso, lo sé. Mejor tomemos esta función como ejemplo:
 
+---
 ```lisp
 (defun cuenta-rebanadas (lista-de-rebanadas)
   (cond
@@ -78,9 +83,12 @@ Para quienes van empezando, recursión en términos muy informales, es realizar 
     (t (+ 1
           (cuenta-rebanadas (cdr lista-de-rebanadas))))))
 ```
+---
 
 La primera línea define la función `cuenta-rebanadas` y los argumentos que recibe, en este caso una único argumento en forma de lista (`lista-de-rebanadas`).
+
 Le sigue una macro `cond` que es  algo similar a las estructuras `if ... else` en otros lenguajes, la tercera línea contiene el predicado `(null lista-de-rebanadas)` que pregunta si `lista-de-rebanadas` es vacía (`()` o `NIL`), si es cierto se devuelve el número `0` porque recibimos una lista sin elementos.
+
 Finalmente, en las últimas dos líneas es donde encontramos la _"llamada recursiva"_. En caso de que `lista-de-rebanadas` no sea vacía, asumimos que debe de contener al menos una rebanada, así que con el símbolo `t` (verdadero) representamos el equivalente a la cláusula `else`, donde se realiza una suma `(+ 1 NUM-DESCONOCIDO)` donde `NUM-DESCONOCIDO` es el resultado que nos devolverá la llamada recursiva a la misma función `cuenta-rebanadas` con el argumento `(cdr lista-de-rebanadas)`, es decir `lista-de-rebanadas` menos el primer elemento, de tal forma que `(cdr '(r r))` retorna la lista `(r)`... (¡Que locura!, ¿cierto?, quizá me emociono demasiado, pero me parece muy interesante resolver problemas así).
 
 Quizá con ejemplos sea un poquito más comprensible:
@@ -97,9 +105,9 @@ Devolverá el número `0` porque `lista-de-rebanadas` es la lista vacía, sin el
 Después de verificar que `(x)` no es una lista vacía se suma uno al resultado que devuelva `(cuenta-rebanadas (cdr '(x)))`, que se convierte en `(cuenta-rebanadas '())` el cual es el caso anterior, por lo que se nos devuelve `0` y se suma `1` a este. Representado de otra forma:
 
 ```lisp
-(+1 (cuenta-rebanadas (cdr '(x))))
-(+1 (cuenta-rebanadas '()))
-(+1 0)
+(+ 1 (cuenta-rebanadas (cdr '(x))))
+(+ 1 (cuenta-rebanadas '()))
+(+ 1 0)
 => 1
 ```
 
