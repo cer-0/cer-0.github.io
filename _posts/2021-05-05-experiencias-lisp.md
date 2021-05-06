@@ -30,7 +30,7 @@ Intentando desempolvar lo poco que sé de Ruby llegué a este código (con ayuda
 
 La primera y última línea únicamente se encargan de definir el cuerpo del procedimiento (función), denotando que recibe tres argumentos, `x`, `y` y `z`.
 
-La línea con el operador `return` hace exactamente lo que pide el problema, es decir, `[x, y, z]` es un arreglo creado con los tres argumentos que recibe `procedimiento`, `.max(2)` selecciona los dos números más grandes para que `.map{|n| n*n}` multiplique cada uno de ellos por sí mismo (o sea elevar al cuadrado) y finalmente `.reduce(:+)` pasa a sumar cada uno de los dos números en el arreglo, para así devolver el resultado. Compacto pero algo esotérico...cierto?.
+La línea con el operador `return` hace exactamente lo que pide el problema, es decir, `[x, y, z]` es un arreglo creado con los tres argumentos que recibe `procedimiento`, `.max(2)` selecciona los dos números más grandes para que `.map{|n| n*n}` multiplique cada uno de ellos por sí mismo (o sea elevar al cuadrado) y finalmente `.reduce(:+)` pasa a sumar cada uno de los dos números en el arreglo, para así devolver el resultado. Compacto pero algo esotérico... ¿cierto?.
 
 _Y en la otra esquina, damas y damos_...
 
