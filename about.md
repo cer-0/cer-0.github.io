@@ -10,4 +10,4 @@ Apart from computers, \*nix-like operating systems, computer security, privacy, 
 
 I'm a CpE undergrad, after spending roughly 3 years in a career I thought I liked (looking at you actuarial science) I decided to switch to computer engineering, so, here I am. (:
 
-Kudos to @TRMIKO, who made this possible (I am so terrible at web development).
+Kudos to [4rtur8](https://www.4rtur8.com/), who made this possible (I am so terrible at web development).
