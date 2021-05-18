@@ -11,7 +11,7 @@ In either case, here is my experience trying to remove the password (spoiler: it
 
 ## Getting the necessary tools
 
-To be honest, this was the simplest part. Yo will need:
+To be honest, this was the simplest part. You will need:
 
 * screwdrivers
 * tweezers
@@ -103,7 +103,7 @@ I will have stayed with coreboot, but this was my dad's computer. Still, was goo
 
 This time I am going to post *at least* once a month, *A* have challenged me to post with more frequency (he had the idea of posting once a week, that's insane, at least for me, I really struggle writing, sometimes I feel I cannot express my thoughts correctly), so, yeah I will try to keep up with the schedule.
 
-Also, I almost forgot... I'm about to start classes, I'm kinda nervous... it is weird *starting over again*, but I guess is a good thing.
+Also, I almost forgot... I'm about to start classes, I'm kinda nervous... It is weird *starting over again*, but I guess is a good thing.
 
 Be safe, whenever and wherever you are.
 
