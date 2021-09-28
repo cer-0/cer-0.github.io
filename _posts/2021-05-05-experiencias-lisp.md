@@ -4,7 +4,7 @@ layout: page
 lang: es
 ---
 
-**Actualización** (16-08-2021): El nuevo horario del seminario es de 17:00 a 19:00 los días miércoles.
+**Actualización** (28-09-2021): El nuevo horario del seminario es de 18:00 a 19:00 los miércoles y jueves, el viernes es de 17:00 a 18:00.
 
 Recientemente (¡rayos!, se supone que terminaría esta entrada hace cuatro días) se celebró el Festival Latinoamericano de Instalación de Software Libre[^0] (FLISoL) con sede en el Rancho Electrónico[^1] de la CeDeMequis donde tuve la idea de participar junto con [Diego](https://github.com/umoqnier), compartiendo la [charla](https://youtu.be/RtjIwGFmBJ4?t=3605) (y un pequeño taller) _Experiencias aprendiendo a programar en LISP (o cómo comenzar a preocuparte por balancear tus paréntesis)_ (la cual se preparó unas horas antes de su presentación), lo que sigue es un intento por plasmar parte de lo que vagamente se dijo en esa charla, específicamente la parte de las experiencias. 
 
