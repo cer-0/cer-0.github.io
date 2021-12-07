@@ -35,7 +35,7 @@ header_pages:
 plugins:
   - jekyll-feed
 
-footer: '<a href="https://www.youtube.com/watch?v=ao2GL3NAWQU">🌱</a> <a href="/feed.xml">feed</a> <a href="https://bandcamp.com/egf/wishlist">support me</a>'
+footer: '<a href="https://www.youtube.com/watch?v=ao2GL3NAWQU">🌱</a> <a href="/feed.xml">feed</a>'
 
 # Markdown options
 kramdown:
